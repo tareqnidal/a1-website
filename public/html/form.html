@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../recourses/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../recourses/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="page.html" class="logo">
+                <img src="..\recourses\download.jpeg" alt="Logo">
+            </a>
+            <h1>It seems that you have alot of money XD</h1>
+            <div class="language-switcher">
+                <select onchange="location = this.value;">
+                    <option value="?lang=en">English</option>
+                    <option value="?lang=es">Español</option>
+                    <option value="?lang=fr">Français</option>
+                    <option value="?lang=ar">Arabic</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="page.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html">form</a></li>
+            <li><a href="column3.html">Israel-Palestine conflict</a></li>
+            <li><a href="typography.html">typography.</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <h1>Credit Card Details</h1>
+            <div class="form-group">
+                <label for="name">Name on Card:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="card-type">Card Type:</label>
+                <select id="card-type" name="card_type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card_number">
+            </div>
+            <div class="form-group">
+                <label for="validity">Valid Thru:</label>
+                <input type="text" id="validity" name="validity" placeholder="MM/YYYY" required>
+            </div>
+            <button type="submit" onclick="alert('Thank you for spending your money in our website')">Submit</button>
+        </form>
+    </main>
+    
+    <footer>
+        <div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Reference</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Reference</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.w3.org/TR/html52/" target="_blank">HTML Standard</a></li>
+                <li><a href="https://www.w3.org/Style/CSS/" target="_blank">CSS Standard</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

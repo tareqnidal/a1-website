@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.secondmainImg{
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.aside-img{
+    width: 300px;
+    height:auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Style the navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; /* Add bold font for emphasis */
+    transition: color 0.3s; /* Add a smooth color transition effect */
+  }
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Column Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    flex: 1; /* Equal width for side columns */
+    padding: 10px;
+    min-width: 200px; /* Minimum width */
+    border: 1px solid #ddd;
+}
+
+.main-column {
+    flex: 2; /* Double the width of side columns */
+    padding: 10px;
+    min-width: 400px; /* Minimum width */
+    background-color: #f9f9f9; /* Slightly different background for emphasis */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px; /* Add more padding for a nicer look */
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px; /* Increase margin for better spacing */
+  }
+  
+  footer a:hover {
+    color: lightskyblue; /* Change color on hover */
+  }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Header styles for mobile */
+    header .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Navigation styles for mobile */
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+
+    /* Footer styles for mobile */
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        margin-bottom: 10px;
+    }
+}

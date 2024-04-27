@@ -1,0 +1,272 @@
+/* Reset styles for basic elements */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, select, pre, code, kbd, samp, dfn, abbr, mark, sup, sub, small, hr, table, caption, thead, tbody, tr, th, td, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+/* Header Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #434545;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+header .language-switcher select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style the navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* List Styles */
+ul, ol {
+    margin: 20px;
+    padding-left: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Link Styles */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+main {
+    max-width: 10000px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+a:hover {
+    color: #555;
+}
+
+/* Special Text Styles */
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+    padding: 0 5px;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+    font-family: 'Courier New', monospace;
+}
+
+kbd {
+    background: #eee;
+    padding: 2px 5px;
+    font-family: 'Courier New', monospace;
+}
+
+samp {
+    font-family: 'Courier New', monospace;
+}
+
+dfn {
+    font-style: italic;
+    cursor: help;
+}
+
+abbr {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+sup, sub {
+    font-size: smaller;
+}
+
+small {
+    font-size: smaller;
+}
+
+blockquote {
+    border-left: 3px solid #ccc;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Preformatted Text */
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Horizontal Definition List */
+dl.horizontal dt {
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    font-weight: bold;
+}
+
+dl.horizontal dd {
+    margin: 0 0 0 160px;
+    padding: 0 0 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px; /* Increase margin for better spacing */
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; /* Add bold font for emphasis */
+    transition: color 0.3s; /* Add a smooth color transition effect */
+  }
+  
+  footer a:hover {
+    color: lightskyblue; /* Change color on hover */
+  }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Header styles for mobile */
+    header .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Navigation styles for mobile */
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+
+    /* Footer styles for mobile */
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        margin-bottom: 10px;
+    }
+}
